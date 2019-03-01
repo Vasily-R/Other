@@ -1,0 +1,29 @@
+unit AccessAdapterUnit;
+
+interface
+
+uses
+  System.Generics.Collections,
+  AdaptersUnit;
+
+type
+  AccessAdapter = class(TInterfacedObject, Adapters)
+  private
+    function getMenu: TList<string>;
+    published
+    constructor create;
+  end;
+
+implementation
+
+constructor AccessAdapter.create;
+begin
+
+end;
+
+function AccessAdapter.getMenu: TList<string>;
+begin
+  result:= TList<string>.create;
+end;
+
+end.

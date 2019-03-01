@@ -1,0 +1,15 @@
+unit PhisicsControllerUnit;
+
+interface
+
+uses ControllersUnit, System.Generics.Collections;
+
+type
+  PhisicsController = class(TInterfacedObject, Controllers)
+  public
+    function getMenu:TList<string>;
+  end;
+
+implementation
+
+end.
