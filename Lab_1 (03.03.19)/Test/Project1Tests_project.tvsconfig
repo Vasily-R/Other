@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="namespaceFolder.Project1Tests" Type="System.String" Value="Project1Tests" Category="General" IsBrowsable="False" />
+</TgConfig>

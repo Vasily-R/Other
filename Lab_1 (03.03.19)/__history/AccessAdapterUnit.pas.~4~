@@ -1,0 +1,36 @@
+unit AccessAdapterUnit;
+
+interface
+
+uses
+  Data.DB,
+  Data.Win.ADODB,
+  System.Generics.Collections,
+  AdaptersUnit;
+
+type
+  AccessAdapter = class(TInterfacedObject, Adapters)
+  private
+    ADOConnection: TADOConnection;
+    function getMenu: TList<string>;
+  published
+    constructor create;
+  end;
+
+implementation
+
+constructor AccessAdapter.create;
+begin
+  ADOConnection := TADOConnection.create(nil);
+  with (ADOConnection) do
+  begin
+   Provider:='';
+  end;
+end;
+
+function AccessAdapter.getMenu: TList<string>;
+begin
+  result := TList<string>.create;
+end;
+
+end.
